@@ -5,8 +5,16 @@
 -----------------------------------------------------------------------------------------
 
 local storyboard = require "storyboard"
+local widget = require "widget"
 
--- load scenetemplate.lua
-storyboard.gotoScene( "scenetemplate" )
+storyboard.gotoScene("scenetemplate")
 
--- Add any objects that should appear on all scenes below (e.g. tab bar, hud, etc.):
+display.setStatusBar(display.DefaultStatusBar)
+
+local scenes = {"scenetemplate","scenetemplate","scenetemplate","scenetemplate","scenetemplate"}
+
+local tabButtons = {
+	{label="1",up="openMenuIcon.jpg",down="openMenuIcon.jpg",onPress=function(event) print("yo") end,selected=true},
+}
+
+local bar = widget.newTabBar{top=display.contentHeight - 50,buttons=tabButtons}
