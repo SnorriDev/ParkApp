@@ -24,6 +24,10 @@ scene:addEventListener("enterScene", scene)
 scene:addEventListener("exitScene", scene)
 scene:addEventListener("destroyScene", scene)
 
+bbpLat = 40.69399
+bbpLong = -73.99927
+
 myMap = native.newMapView(20,20,280,300)
+myMap:setCenter(bbpLat, bbpLong)
 
 return scene
