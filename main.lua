@@ -12,12 +12,15 @@ storyboard.gotoScene("scenetemplate")
 display.setStatusBar(display.DefaultStatusBar)
 
 local function onMenuOptionPressed(event)
-	print(event.target.id)
+	storyboard.gotoScene(event.target.id, {params={
+		title = "TITLE",
+		content = "Lorem ipsum"
+	}})
 end
 
 local tabButtons = {
 	{label="Map",id="map",up="openMenuIcon.jpg",down="openMenuIcon.jpg",onPress=onMenuOptionPressed,selected=true},
-	{label="Events",id="events",up="openMenuIcon.jpg",down="openMenuIcon.jpg",onPress=onMenuOptionPressed},
+	{label="Research",id="research",up="openMenuIcon.jpg",down="openMenuIcon.jpg",onPress=onMenuOptionPressed},
 	{label="Rules",id="rules",up="openMenuIcon.jpg",down="openMenuIcon.jpg",onPress=onMenuOptionPressed},
 	{label="More",id="more",up="openMenuIcon.jpg",down="openMenuIcon.jpg",onPress=onMenuOptionPressed},
 }
