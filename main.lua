@@ -7,7 +7,7 @@
 local storyboard = require "storyboard"
 local widget = require "widget"
 
-storyboard.gotoScene("scenetemplate")
+storyboard.gotoScene("map")
 
 display.setStatusBar(display.DefaultStatusBar)
 
