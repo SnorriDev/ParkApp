@@ -31,10 +31,10 @@ local function onMenuOptionPressed(event)
 end
 
 local tabButtons = {
-	{label="Map",id="map",up="openMenuIcon.jpg",down="openMenuIcon.jpg",onPress=onMenuOptionPressed,selected=true},
-	{label="Research",id="research",up="openMenuIcon.jpg",down="openMenuIcon.jpg",onPress=onMenuOptionPressed},
-	{label="Sustainability",id="sustainability",up="openMenuIcon.jpg",down="openMenuIcon.jpg",onPress=onMenuOptionPressed},
-	{label="More",id="more",up="openMenuIcon.jpg",down="openMenuIcon.jpg",onPress=onMenuOptionPressed},
+	{label="Map",id="map",up="openMenuIcon.png",down="openMenuIcon.png",onPress=onMenuOptionPressed,selected=true},
+	{label="Research",id="research",up="openMenuIcon.png",down="openMenuIcon.png",onPress=onMenuOptionPressed},
+	{label="Sustainability",id="sustainability",up="openMenuIcon.png",down="openMenuIcon.png",onPress=onMenuOptionPressed},
+	{label="More",id="more",up="openMenuIcon.png",down="openMenuIcon.png",onPress=onMenuOptionPressed},
 }
 
 local bar = widget.newTabBar{top=display.contentHeight - 50,buttons=tabButtons}
