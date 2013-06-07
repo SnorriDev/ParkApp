@@ -5,7 +5,7 @@
 -----------------------------------------------------------------------------------------
 
 local storyboard = require "storyboard"
-local widget = require "widget"
+local widget = require "widget-v1"
 local slid = false
 
 storyboard.gotoScene("map")
